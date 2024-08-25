@@ -6,3 +6,5 @@ export const getAllContacts = async () => {
     return JSON.parse(await fs.readFile(PATH_DB, "utf-8"));
 };
 
+console.log(await getAllContacts());
+
